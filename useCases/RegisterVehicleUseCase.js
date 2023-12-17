@@ -5,6 +5,10 @@ class RegisterVehicleUseCase {
   }
 
   execute(vehicle, user) {
+    console.log(
+      "🚀 ~ file: RegisterVehicleUseCase.js:8 ~ RegisterVehicleUseCase ~ execute ~ user:",
+      user
+    );
     const fleet = this.fleetRepository.getFleetByUser(user);
     console.log(
       "🚀 ~ file: RegisterVehicleUseCase.js:9 ~ RegisterVehicleUseCase ~ execute ~ fleet:",
@@ -18,6 +22,9 @@ class RegisterVehicleUseCase {
         fleet
       );
     } else {
+      console.log(
+        "🚀 ~ file: RegisterVehicleUseCase.js:24 ~ RegisterVehicleUseCase ~ execute ~ Vehicle already registered:"
+      );
       throw new Error("Vehicle already registered");
     }
   }
