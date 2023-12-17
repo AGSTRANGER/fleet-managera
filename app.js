@@ -1,8 +1,10 @@
-const FleetRepository = require("./repositories/FleetRepository");
-const RegisterVehicleUseCase = require("./useCases/RegisterVehicleUseCase");
-const ParkVehicleUseCase = require("./useCases/ParkVehicleUseCase");
 const Vehicle = require("./entities/Vehicle");
 const Location = require("./entities/Location");
+
+const FleetRepository = require("./repositories/FleetRepository");
+
+const RegisterVehicleUseCase = require("./useCases/RegisterVehicleUseCase");
+const ParkVehicleUseCase = require("./useCases/ParkVehicleUseCase");
 
 const fleetRepository = new FleetRepository();
 const registerVehicleUseCase = new RegisterVehicleUseCase(fleetRepository);
