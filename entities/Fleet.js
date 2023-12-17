@@ -1,5 +1,6 @@
 class Fleet {
-  constructor() {
+  constructor(user) {
+    this.user = user;
     this.vehicles = [];
   }
 
