@@ -1,0 +1,12 @@
+node cli.js create user123
+Fleet created with ID: 657eda7abeffd99519d6ce3c
+_______________________________________________
+node cli.js register-vehicle 657eda7abeffd99519d6ce3c ABC123
+Vehicle registered successfully
+_______________________________________________
+node cli.js localize-vehicle 657eda7abeffd99519d6ce3c ABC123 40.7128 -74.0060 0
+Vehicle localized successfully
+_______________________________________________
+node cli.js park-vehicle <fleetId> <vehiclePlateNumber> <lat> <lng> [alt]
+node cli.js park-vehicle 657eda7abeffd99519d6ce3c ABC123 50 90 0
+Vehicle parked successfully

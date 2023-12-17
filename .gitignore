@@ -1,0 +1,15 @@
+# .gitignore
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore logs and other generated files
+logs/
+*.log
+*.pid
+
+# Ignore local configuration files
+config/local.js
+
+# Ignore environment variables file
+.env
