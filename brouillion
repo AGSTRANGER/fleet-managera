@@ -10,3 +10,10 @@ _______________________________________________
 node cli.js park-vehicle <fleetId> <vehiclePlateNumber> <lat> <lng> [alt]
 node cli.js park-vehicle 657eda7abeffd99519d6ce3c ABC123 50 90 0
 Vehicle parked successfully
+
+--
+Making fleet_cli.js executable
+I added this in the beginning of the file
+#!/usr/bin/env node
+And then I executed this
+chmod +x cli.js
